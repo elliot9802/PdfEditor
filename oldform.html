@@ -1,0 +1,350 @@
+<form id="pdfCustomizationForm">
+  <!-- Personal Information -->
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeEmail"
+        class="checkbox-custom"
+        checked
+      />
+      <span class="checkmark"></span>
+      Include Email
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeContactPerson"
+        class="checkbox-custom"
+      />
+      <span class="checkmark"></span>
+      Include Contact Person
+    </label>
+  </fieldset>
+
+  <!-- Booking Details -->
+  <fieldset>
+    <legend>Booking Details</legend>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeWebBookingNr"
+        class="checkbox-custom"
+        checked
+      />
+      <span class="checkmark"></span>
+      Include Web Booking Number
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeBookingNr"
+        class="checkbox-custom"
+        checked
+      />
+      <span class="checkmark"></span>
+      Include Booking Number
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludePrice"
+        class="checkbox-custom"
+        checked
+      />
+      <span class="checkmark"></span>
+      Include Price
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeServiceFee"
+        class="checkbox-custom"
+        checked
+      />
+      <span class="checkmark"></span>
+      Include Service Fee
+    </label>
+  </fieldset>
+
+  <!-- Event Information -->
+  <fieldset>
+    <legend>Event Information</legend>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeEventName"
+        class="checkbox-custom"
+        checked
+      />
+      <span class="checkmark"></span>
+      Include Event Name
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeSubEventName"
+        class="checkbox-custom"
+      />
+      <span class="checkmark"></span>
+      Include Sub Event Name
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeEventDate"
+        class="checkbox-custom"
+        checked
+      />
+      <span class="checkmark"></span>
+      Include Event Date
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeEventDateId"
+        class="checkbox-custom"
+      />
+      <span class="checkmark"></span>
+      Include Event Date ID
+    </label>
+  </fieldset>
+
+  <!-- Product Information -->
+  <fieldset>
+    <legend>Product Information</legend>
+    <label>
+      <input type="checkbox" name="IncludeArtNr" class="checkbox-custom" />
+      <span class="checkmark"></span>
+      Include Article Number
+    </label>
+    <label>
+      <input type="checkbox" name="IncludeArtName" class="checkbox-custom" />
+      <span class="checkmark"></span>
+      Include Article Name
+    </label>
+    <label>
+      <input type="checkbox" name="IncludeChairRow" class="checkbox-custom" />
+      <span class="checkmark"></span>
+      Include Chair Row
+    </label>
+    <label>
+      <input type="checkbox" name="IncludeChairNr" class="checkbox-custom" />
+      <span class="checkmark"></span>
+      Include Chair Number
+    </label>
+  </fieldset>
+
+  <!-- Additional Information -->
+  <fieldset>
+    <legend>Additional Information</legend>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeFacilityName"
+        class="checkbox-custom"
+      />
+      <span class="checkmark"></span>
+      Include Facility Name
+    </label>
+    <label>
+      <input type="checkbox" name="IncludeAd" class="checkbox-custom" />
+      <span class="checkmark"></span>
+      Include Advertisement
+    </label>
+    <label>
+      <input
+        type="checkbox"
+        name="IncludeshowEventInfo"
+        class="checkbox-custom"
+      />
+      <span class="checkmark"></span>
+      Show Event Information
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Positioning Information</legend>
+    <!-- Position Inputs for Email -->
+    <label>
+      Email Position X:
+      <input type="number" name="EmailPositionX" value="0" />
+    </label>
+    <label>
+      Email Position Y:
+      <input type="number" name="EmailPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for Name -->
+    <label>
+      Name Position X:
+      <input type="number" name="NamePositionX" value="0" />
+    </label>
+    <label>
+      Name Position Y:
+      <input type="number" name="NamePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for WebBookingNumber -->
+    <label>
+      Web Booking Number Position X:
+      <input type="number" name="WebBookingNumberPositionX" value="0" />
+    </label>
+    <label>
+      Web Booking Number Position Y:
+      <input type="number" name="WebBookingNumberPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for ArtNr -->
+    <label>
+      Article Number Position X:
+      <input type="number" name="ArtNrPositionX" value="0" />
+    </label>
+    <label>
+      Article Number Position Y:
+      <input type="number" name="ArtNrPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for Price -->
+    <label>
+      Price Position X:
+      <input type="number" name="PricePositionX" value="0" />
+    </label>
+    <label>
+      Price Position Y:
+      <input type="number" name="PricePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for ServiceFee -->
+    <label>
+      ServiceFee Position X:
+      <input type="number" name="ServiceFeePositionX" value="0" />
+    </label>
+    <label>
+      ServiceFee Position Y:
+      <input type="number" name="ServiceFeePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for ArtName -->
+    <label>
+      ArtName Position X:
+      <input type="number" name="ArtNamePositionX" value="0" />
+    </label>
+    <label>
+      ArtName Position Y:
+      <input type="number" name="ArtNamePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for ChairRow -->
+    <label>
+      ChairRow Position X:
+      <input type="number" name="ChairRowPositionX" value="0" />
+    </label>
+    <label>
+      ChairRow Position Y:
+      <input type="number" name="ChairRowPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for ChairNr -->
+    <label>
+      ChairNr Position X:
+      <input type="number" name="ChairNrPositionX" value="0" />
+    </label>
+    <label>
+      ChairNr Position Y:
+      <input type="number" name="ChairNrPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for EventDateId -->
+    <label>
+      EventDateId Position X:
+      <input type="number" name="EventDateIdPositionX" value="0" />
+    </label>
+    <label>
+      EventDateId Position Y:
+      <input type="number" name="EventDateIdPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for EventDate -->
+    <label>
+      EventDate Position X:
+      <input type="number" name="EventDatePositionX" value="0" />
+    </label>
+    <label>
+      EventDate Position Y:
+      <input type="number" name="EventDatePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for EventName -->
+    <label>
+      EventName Position X:
+      <input type="number" name="EventNamePositionX" value="0" />
+    </label>
+    <label>
+      EventName Position Y:
+      <input type="number" name="EventNamePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for SubEventName -->
+    <label>
+      SubEventName Position X:
+      <input type="number" name="SubEventNamePositionX" value="0" />
+    </label>
+    <label>
+      SubEventName Position Y:
+      <input type="number" name="SubEventNamePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for BookingNr -->
+    <label>
+      BookingNr Position X:
+      <input type="number" name="BookingNrPositionX" value="0" />
+    </label>
+    <label>
+      BookingNr Position Y:
+      <input type="number" name="BookingNrPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for FacilityName -->
+    <label>
+      FacilityName Position X:
+      <input type="number" name="FacilityNamePositionX" value="0" />
+    </label>
+    <label>
+      FacilityName Position Y:
+      <input type="number" name="FacilityNamePositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for Advertisement -->
+    <label>
+      Advertisement Position X:
+      <input type="number" name="AdvertisementPositionX" value="0" />
+    </label>
+    <label>
+      Advertisement Position Y:
+      <input type="number" name="AdvertisementPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for showEventInfo -->
+    <label>
+      showEventInfo Position X:
+      <input type="number" name="showEventInfoPositionX" value="0" />
+    </label>
+    <label>
+      showEventInfo Position Y:
+      <input type="number" name="showEventInfoPositionY" value="0" />
+    </label>
+
+    <!-- Position Inputs for ContactPerson -->
+    <label>
+      ContactPerson Position X:
+      <input type="number" name="ContactPersonPositionX" value="0" />
+    </label>
+    <label>
+      ContactPerson Position Y:
+      <input type="number" name="ContactPersonPositionY" value="0" />
+    </label>
+  </fieldset>
+  <!-- Submit Button -->
+  <button type="submit">Generate PDF</button>
+</form>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="interactable.js"></script>
+    <title>PDF Customization</title>
+  </head>
+  <body>
+    <section class="customization">
+      <h1>Customize Your PDF Ticket</h1>
+      <form id="pdfCustomizationForm">
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeEmail"
+              class="checkbox-custom"
+              checked
+            />
+            <span class="checkmark"></span>
+            Include Email
+          </label>
+          <label class="position-label"
+            >Email Position X:
+            <input type="number" name="EmailPositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >Email Position Y:
+            <input type="number" name="EmailPositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeContactPerson"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Contact Person
+          </label>
+          <label class="position-label"
+            >Name Position X:
+            <input type="number" name="NamePositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >Name Position Y:
+            <input type="number" name="NamePositionY" value="0" />
+          </label>
+        </fieldset>
+
+        <!-- Booking Details -->
+        <fieldset>
+          <legend>Booking Details</legend>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeWebBookingNr"
+              class="checkbox-custom"
+              checked
+            />
+            <span class="checkmark"></span>
+            Include Web Booking Number
+          </label>
+          <label class="position-label"
+            >Web Booking Number Position X:
+            <input type="number" name="WebBookingNumberPositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >Web Booking Number Position Y:
+            <input type="number" name="WebBookingNumberPositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeBookingNr"
+              class="checkbox-custom"
+              checked
+            />
+            <span class="checkmark"></span>
+            Include Booking Number
+          </label>
+          <label class="position-label"
+            >BookingNr Position X:
+            <input type="number" name="BookingNrPositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >BookingNr Position Y:
+            <input type="number" name="BookingNrPositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludePrice"
+              class="checkbox-custom"
+              checked
+            />
+            <span class="checkmark"></span>
+            Include Price
+          </label>
+          <label class="position-label"
+            >Price Position X:
+            <input type="number" name="PricePositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >Price Position Y:
+            <input type="number" name="PricePositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeServiceFee"
+              class="checkbox-custom"
+              checked
+            />
+            <span class="checkmark"></span>
+            Include Service Fee
+          </label>
+          <label class="position-label"
+            >ServiceFee Position X:
+            <input type="number" name="ServiceFeePositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >ServiceFee Position Y:
+            <input type="number" name="ServiceFeePositionY" value="0" />
+          </label>
+        </fieldset>
+
+        <!-- Event Information -->
+        <fieldset>
+          <legend>Event Information</legend>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeEventName"
+              class="checkbox-custom"
+              checked
+            />
+            <span class="checkmark"></span>
+            Include Event Name
+          </label>
+          <label class="position-label"
+            >EventName Position X:
+            <input type="number" name="EventNamePositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >EventName Position Y:
+            <input type="number" name="EventNamePositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeSubEventName"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Sub Event Name
+          </label>
+          <label class="position-label"
+            >SubEventName Position X:
+            <input type="number" name="SubEventNamePositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >SubEventName Position Y:
+            <input type="number" name="SubEventNamePositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeEventDate"
+              class="checkbox-custom"
+              checked
+            />
+            <span class="checkmark"></span>
+            Include Event Date
+          </label>
+          <label class="position-label"
+            >EventDate Position X:
+            <input type="number" name="EventDatePositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >EventDate Position Y:
+            <input type="number" name="EventDatePositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeEventDateId"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Event Date ID
+          </label>
+          <label class="position-label"
+            >EventDateId Position X:
+            <input type="number" name="EventDateIdPositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >EventDateId Position Y:
+            <input type="number" name="EventDateIdPositionY" value="0" />
+          </label>
+        </fieldset>
+
+        <!-- Product Information -->
+        <fieldset>
+          <legend>Product Information</legend>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeArtNr"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Article Number
+          </label>
+          <label class="position-label"
+            >Article Number Position X:
+            <input type="number" name="ArtNrPositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >Article Number Position Y:
+            <input type="number" name="ArtNrPositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeArtName"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Article Name
+          </label>
+          <label class="position-label"
+            >ArtName Position X:
+            <input type="number" name="ArtNamePositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >ArtName Position Y:
+            <input type="number" name="ArtNamePositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeChairRow"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Chair Row
+          </label>
+          <label class="position-label"
+            >ChairRow Position X:
+            <input type="number" name="ChairRowPositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >ChairRow Position Y:
+            <input type="number" name="ChairRowPositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeChairNr"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Chair Number
+          </label>
+          <label class="position-label"
+            >ChairNr Position X:
+            <input type="number" name="ChairNrPositionX" value="0" />
+          </label>
+          <label class="position-label"
+            >ChairNr Position Y:
+            <input type="number" name="ChairNrPositionY" value="0" />
+          </label>
+        </fieldset>
+
+        <!-- Additional Information -->
+        <fieldset>
+          <legend>Additional Information</legend>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeFacilityName"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Include Facility Name
+          </label>
+          <label>
+            FacilityName Position X:
+            <input type="number" name="FacilityNamePositionX" value="0" />
+          </label>
+          <label>
+            FacilityName Position Y:
+            <input type="number" name="FacilityNamePositionY" value="0" />
+          </label>
+          <label>
+            <input type="checkbox" name="IncludeAd" class="checkbox-custom" />
+            <span class="checkmark"></span>
+            Include Advertisement
+          </label>
+          <label>
+            Advertisement Position X:
+            <input type="number" name="AdvertisementPositionX" value="0" />
+          </label>
+          <label>
+            Advertisement Position Y:
+            <input type="number" name="AdvertisementPositionY" value="0" />
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="IncludeshowEventInfo"
+              class="checkbox-custom"
+            />
+            <span class="checkmark"></span>
+            Show Event Information
+          </label>
+          <label>
+            showEventInfo Position X:
+            <input type="number" name="showEventInfoPositionX" value="0" />
+          </label>
+          <label>
+            showEventInfo Position Y:
+            <input type="number" name="showEventInfoPositionY" value="0" />
+          </label>
+        </fieldset>
+      </form>
+    </section>
+    <section class="preview">
+      <div id="pdfPreview">
+        PDF Preview will be rendered here
+        <div class="draggable">Draggable Element</div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

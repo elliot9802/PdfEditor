@@ -1,0 +1,160 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .customization h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  /* Styling for form elements */
+  #pdfCustomizationForm {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  fieldset:not(.open) > label {
+    display: none;
+  }
+  
+  legend {
+    padding: 0 10px;
+    width: auto;
+    border: none;
+    color: #5b5b5b;
+    cursor: pointer;
+  }
+  
+  label {
+    display: flex;
+    margin-bottom: 10px;
+    color: #333;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 2rem;
+    user-select: none;
+  }
+
+  /* Custom checkbox */
+  .checkbox-custom {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-custom:checked + .checkmark {
+    background-color: #5b85d3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkbox-custom:checked + .checkmark:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  /* Number input styling */
+  input[type="number"] {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 4px;
+    width: 80px;
+    margin-right: 10px;
+  }
+
+  /* Initially hide the email position labels */
+.position-label {
+  display: none;
+}
+
+
+  /* Button styling */
+  button {
+    background-color: #5b85d3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  button:hover {
+    background-color: #4a70b5;
+  }
+
+  /* Styling for the preview section */
+  .preview {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  #pdfPreview {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    height: 200px;
+  }
+
+  .draggable {
+    width: 25%;
+    min-height: 6.5em;
+    margin: 1rem 0 0 1rem;
+    background-color: #29e;
+    color: white;
+    border-radius: 0.75em;
+    padding: 4%;
+    touch-action: none;
+    user-select: none;
+  }
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    body {
+      padding: 10px;
+    }
+
+    #pdfCustomizationForm {
+      padding: 10px;
+      max-width: 100%;
+    }
+  }
+
